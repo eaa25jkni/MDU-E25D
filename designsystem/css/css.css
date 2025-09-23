@@ -7,13 +7,12 @@
 /* Sådan importerer du direkte til css */
 
 /* Fonten eller fontene importeres */
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lacquer&family=Permanent+Marker&family=Ribeye&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 /*
-Sådan bruger du fontene, her "Permanent marker"
+Sådan bruger du fontene, her "Ephesis"
 
-.permanent-marker-regular {
-  font-family: "Permanent Marker", cursive;
+.Libertinus_Keyboard {
+  font-family: "Ephesis, cursive;";
   font-weight: 400;
   font-style: normal;
 }
@@ -33,14 +32,17 @@ Sådan bruger du fontene, her "Permanent marker"
   /* farver */
   --farve_1: rgb(229, 241, 229); /* Lys */
   --farve_2: #150202; /* Mørkest */
-  --farve_3: #27c4c6;
-  --farve_4: #c627c4;
-  --farve_5: #c62a27;
+  --farve_3: #8ebbd9;
+  --farve_4: #134e9c;
+  --farve_5: #e6885c;
+  --farve_6: #cd5810;
+  --farve_7: #ecd5c2;
   /* ... etc ... */
+
 
   /* typografi */
   --broedtekst: Verdana, Geneva, Tahoma, sans-serif;
-  --overskrifter: "Permanent Marker", cursive;
+  --overskrifter: "Ephesis", cursive;
 
   /* kolonnebredde */
   --treKolonner: 33%;
@@ -58,8 +60,8 @@ Sådan bruger du fontene, her "Permanent marker"
 /* Fra body nedarved farver og fonte til resten af siden */
 body {
   font-family: var(--broedtekst);
-  background-color: var(--farve_1);
-  color: var(--farve_2);
+  background-color: var(--farve_7);
+  color: var(--farve_4);
 }
 
 /* Når du vil lave kolonner */
@@ -102,7 +104,7 @@ img {
 }
 
 .farve_2_color {
-  color: var(--farve_2);
+  color: var(--farve_3);
 }
 
 /* Farve 3 som baggrund */
@@ -111,8 +113,29 @@ img {
 }
 
 .farve_3_color {
-  color: var(--farve_3);
+  color: var(--farve_4);
 }
+
+/* Farve 4 som baggrund */
+.farve_4_bg {
+  background-color: var(--farve_4);
+}
+
+/* Farve 5 som baggrund */
+.farve_5_bg {
+  background-color: var(--farve_5);
+}
+
+/* Farve 6 som baggrund */
+.farve_6_bg {
+  background-color: var(--farve_6);
+}
+
+/* Farve 7 som baggrund */
+.farve_7_bg {
+  background-color: var(--farve_7);
+}
+
 
 /* fortsæt selv ... alle farver skal med ... */
 
@@ -122,10 +145,20 @@ h2 {
   font-family: var(--overskrifter);
 }
 
+h1{
+  font-size: 4rem;
+
+}
+
 h2 {
   margin-top: 2rem;
   margin-bottom: .5rem;
+  color: var(--farve_1);
+  background-color: var(--farve_6);
 }
+
+
+
 
 /* LAYOUT */
 
@@ -185,7 +218,7 @@ footer {
   align-content: center;
   text-align: center;
 
-  background-color: var(--farve_2);
+  background-color: var(--farve_4);
   color: var(--farve_1);
 }
 
